@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Dmitry Sorokin](https://up.htmlacademy.ru/adaptive/18/user/1063087).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиля Зилюкина](https://up.htmlacademy.ru/adaptive/18/user/803445).
 
 ---
 
