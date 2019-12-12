@@ -1,12 +1,303 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Погнали</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Academy: Погнали</title>
+	</head>
+	<body>
+		<header class='header__index'>
+			<img class='header__index--img' src='https://via.placeholder.com/150x150' alt='Бекграунд'>
+			<nav class='header-nav'>
+				<button class='header-nav__toggle' type='button'>Открыть меню</button>
+				<div class='header-nav__wrapper'>
+					<a class='header-nav__logo' href='#'>
+						<img class='logo-img' src='https://via.placeholder.com/150x150' alt='Погнали?'>
+					</a>				
+					<ul class='header-nav__menu menu__main'>
+						<li class='header-nav__item'>
+							<div class='header-nav__item-img'>
+								<img class='call-us' src='https://via.placeholder.com/150x150' alt='позвоните нам'>
+							</div>
+						</li>
+						<li class='header-nav__item'>
+							<div class='header-nav__item-img'>
+								<img class='message-us' src='https://via.placeholder.com/150x150' alt='напишите нам'>
+							</div>
+						</li>
+						<li class='header-nav__item'>
+							<ul class='header-nav__user'>
+								<li class='header-nav__user-item'>
+									Авторизация
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class='page-main'>
+			<section class='reviews'>
+				<blockquote class='reviews-block'>
+					<p class='reviews-block__text'>
+						«Лучшее приложение, 
+						что я видел в жизни!»
+					</p>
+					<cite class='reviews-block__author'>
+						Мурат Эльтазин
+						главный редактор 
+						газеты «гаджетлайф»
+					</cite>
+				</blockquote>
+			</section>
+			<section class='instruction'>
+				<h2 class='visually-hidden'>Инструкция</h1>
+				<ul class='instruction__list'>
+					<li class='instruction__item instruction-mango'>
+						<p class='intruction__text'>
+							Выберите 
+							направление
+						</p>
+						<p class='instruction__number'>1</p>
+					</li>
+					<li class='instruction__item instruction-mango'>
+						<p class='intruction__text'>
+							Изучите идеи
+							путешественников
+						</p>
+						<p class='instruction__number'>2</p>
+					</li>
+					<li class='instruction__item instruction-orange'>
+						<p class='intruction__text'>
+							Находите тех, 
+							кто похож на вас
+						</p>
+						<p class='instruction__number'>3</p>
+					</li>
+					<li class='instruction__item instruction-yellow'>
+						<p class='intruction__text'>
+							Путешествуйте
+							вместе!
+						</p>
+						<p class='instruction__number'>4</p>
+					</li>
+				</ul>
+			</section>
+			<section class='about-service'>
+				<h2 class='h2-for-blocks'>О сервисе</h2>
+				<p class='about-service__text description'>
+					Любое путешествие веселее 
+					с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих. 
+				</p>
+				<b class='about-service__text description'>
+					А если найдете кого-то 
+					близкого по духу — скорее 
+					зовите в совместный трип!
+				</b>
+			</section>
+			<section class='route'>
+				<h2 class='h2-for-blocks'>Направления</h2>
+				<p class='route__text description'>
+					Мы не продаем туры 
+					и ничего не рекламируем. 
+					Люди сами пишут о странах, куда хотели бы отправиться 
+					и чем можно там заняться.
+				</p>
+				<ul class='route__list'>
+					<li class='route__item'>
+						<img class='route__item-img' src='https://via.placeholder.com/150x150' alt='Фото страны'>
+						<img class='route__item-flag' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+						<div class='route__country'>
+							<h3 class='route__country-name'>Таиланд</h3>
+							<p class='route__country-slogans'>Джунгли зовут!</p>
+						</div>
+						<p class='number-of-visits'>18321</p>
+					</li>
+					<li class='route__item'>
+						<img class='route__item-img' src='https://via.placeholder.com/150x150' alt='Фото страны'>
+						<img class='route__item-flag' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+						<div class='route__country'>
+							<h3 class='route__country-name'>Франция</h3>
+							<p class='route__country-slogans'>Трэ бьен, манифик!</p>
+						</div>
+						<p class='number-of-visits'>12518</p>
+					</li>
+					<li class='route__item'>
+						<img class='route__item-img' src='https://via.placeholder.com/150x150' alt='Фото страны'>
+						<img class='route__item-flag' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+						<div class='route__country'>
+							<h3 class='route__country-name'>Чехия</h3>
+							<p class='route__country-slogans'>Закоулки старой Европы</p>
+						</div>
+						<p class='number-of-visits'>5326</p>
+					</li>
+				</ul>
+				<a class='route__to-all button' href='#'>Показать все</a>
+			</section>
+			<section class='companions'>
+				<h2 class='h2-for-blocks'>Попутчики</h2>
+				<p class='companions__text description'>
+					Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга. 
+				</p>
+				<b class='companions__text description'>
+					Теперь можно легко найти единомышленников!
+				</b>
+				<ul class='companions__list'>
+					<li class='companions__item'>
+						<div class='companions__item-profile'>
+							<img class='companions__item-photo' src='https://via.placeholder.com/150x150' alt='фото пользователя'>
+							<div class='companions__item-lvl'>
+								<p class='level'>99</p>
+								<div class='line-level'></div>
+								<p class='text-level'>level</p>
+							</div>
+						</div>
+						<div class='companions__item-description'>
+							<div class='companions__item-countries'>
+								<img class='companions__item-flaf' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+								<img class='companions__item-flaf' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+								<img class='companions__item-flaf' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+							</div>
+							<div class='companions__item-status'></div>
+							<p class='companions__item-name'>Таня Фирсова</p>
+							<p class='companions__item-hashtag'>
+								#ЗОЖ #ПП #Фитнес #пляж  
+								#авокадо #смузи
+							</p>
+							<div class='companions__item-movement'>
+								<img class='companions__item-movement-img companions__item-is-active' src='https://via.placeholder.com/150x150' alt='самолет'>
+								<img class='companions__item-movement-img' src='https://via.placeholder.com/150x150' alt='автобус'>
+								<img class='companions__item-movement-img' src='https://via.placeholder.com/150x150' alt='велосипед'>
+								<img class='companions__item-movement-img' src='https://via.placeholder.com/150x150' alt='пешком'>
+							</div>
+						</div>
+					</li>
+					<li class='companions__item'>
+						<div class='companions__item-profile'>
+							<img class='companions__item-photo' src='https://via.placeholder.com/150x150' alt='фото пользователя'>
+							<div class='companions__item-lvl'>
+								<p class='level'>80</p>
+								<div class='line-level'></div>
+								<p class='text-level'>level</p>
+							</div>
+						</div>
+						<div class='companions__item-description'>
+							<div class='companions__item-countries'>
+								<img class='companions__item-flaf' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+								<img class='companions__item-flaf' src='https://via.placeholder.com/150x150' alt='флаг страны'>
+							</div>
+							<div class='companions__item-status'></div>
+							<p class='companions__item-name'>
+								Петя Демин
+							</p>
+							<p class='companions__item-hashtag'>
+								#бургер #бар #футбол 
+								#концерт #крафт
+							</p>
+							<div class='companions__item-movement'>
+								<img class='companions__item-movement-img companions__item-is-active' src='https://via.placeholder.com/150x150' alt='самолет'>
+								<img class='companions__item-movement-img' src='https://via.placeholder.com/150x150' alt='автобус'>
+								<img class='companions__item-movement-img' src='https://via.placeholder.com/150x150' alt='велосипед'>
+								<img class='companions__item-movement-img' src='https://via.placeholder.com/150x150' alt='пешком'>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<a class='companions__to-all button' href='#'>Показать всех</a>
+			</section>
+			<section class='add-profile'>
+				<h1 class='visually-hidden'>Добавьте ваш профиль</h1>
+				<div class='add-profile__left'>
+					<h2 class='h2-for-blocks h2-left'>Добавьте свой	профиль
+					</h2>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Базовое размещение
+						Бесплатно
+					</p>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Вывод на первых позициях
+						99 руб./мес
+					</p>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Кастомный цвет карточки
+						59 руб./мес
+					</p>
+					<div class='add-profile__line'></div>					
+				</div>
+				<div class='add-profile__right'>
+					<img class='add-profile__right-img' src='https://via.placeholder.com/150x150' alt='Цены'>
+					<div class='add-profile__number mango'>1</div>
+					<div class='add-profile__number orange'>2</div>
+					<div class='add-profile__number light-gold'>3</div>
+				</div>
+				<a class='add-profile__for-business' href='#'>Показать тарифы для бизнеса</a>
+				<div class='add-profile__popup'>
+					<h2 class='h2-for-blocks'>Добавьте свой	профиль</h2>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Реклама у блоггера
+						300 000 руб./пост
+					</p>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Накрутка подписчиков
+						от 1 руб./шт.
+					</p>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Лайки от ботов
+						от 20 коп./лайк
+					</p>
+					<div class='add-profile__line'></div>
+					<p class='add-profile__text'>
+						Ваш продакт-плейсмент
+						Индивидуально
+					</p>
+					<div class='add-profile__line'></div>
+					<button class='close-popup' type='button'>Закрыть окно</button>	
+				</div>
+			</section>
+			<section class='to-register'>				
+				<h2 class='h2-for-blocks'>Заинтересовались?</h2>
+				<p class='to-register__text description'>
+					Зарегистрируйтесь, 
+					это быстро и бесплатно!
+					Уже зарегистрированы? Тогда скорее <a class='to-register__a description'>авторизуйтесь</a>.
+				</p>
+				<form class='to-register__form button'>
+					<input class='to-register__email' type='email' placeholder="E-mail">
+					<button class='to-register__button' type='submit'></button>
+				</form>
+				<p class='to-register__ask description'>
+					Остались вопросы? 
+					Мы с радостью на них ответим!
+				</p>
+				<a class='to-register__contact-us' href='tel:8 800 555-86-28'>8 800 555-86-28<img class='to-register__img' src='https://via.placeholder.com/150x150' alt='телефон'></a>
+				<a class='to-register__contact-us' href='#'>mail@htmlacademy.ru<img class='to-register__img' src='https://via.placeholder.com/150x150' alt='сообщение'></a>
+			</section>
+			<section class='location'>
+				<address class='location__address'>ул. Большая Конюшенная, 19/8<img class='to-register__img' src='https://via.placeholder.com/150x150' alt='адрес'></address>
+				<a class='location__button button' href='#'>Проложить маршрут</a>
+				<img class='location-map' src='https://via.placeholder.com/150x150' alt='карта'>
+			</section>
+		</main>
+		<footer class='footer'>
+			<div class='footer__we'>
+				<a class='footer__we-logo'>
+					<img class='logo-img' src='https://via.placeholder.com/150x150' alt='Погнали?'>
+				</a>
+				<div class='footer__social'>
+					<a class='footer__social-link' href='#'><img class='footer__social-facebook' alt='фейсбук'></a>
+					<a class='footer__social-link' href='#'><img class='footer__social-vk' alt='вконтакте'></a>
+					<a class='footer__social-link' href='#'><img class='footer__social-instagram' alt='инстаграмм'></a>
+				</div>
+				<div class='developed'>
+					<p class='developed__text description'>Разработано</p>
+					<a class='developed__html-academy'><img class='developed__img' src='#' alt='html-academy'></a>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
