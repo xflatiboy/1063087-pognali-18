@@ -3,37 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Погнали</title>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-    <header class='header__index'>
-      <img class='header__index--img' src='https://via.placeholder.com/150x150' alt='Бекграунд'>
-      <nav class='header-nav'>
-        <button class='header-nav__toggle' type='button'>Открыть меню</button>
-        <div class='header-nav__wrapper'>
-          <a class='header-nav__logo' href='#'>
-            <img class='logo-img' src='https://via.placeholder.com/150x150' alt='Погнали?'>
-          </a>
-          <ul class='header-nav__menu menu__main'>
-            <li class='header-nav__item'>
-              <div class='header-nav__item-img'>
-                <img class='call-us' src='https://via.placeholder.com/150x150' alt='позвоните нам'>
-              </div>
-            </li>
-            <li class='header-nav__item'>
-              <div class='header-nav__item-img'>
-                <img class='message-us' src='https://via.placeholder.com/150x150' alt='напишите нам'>
-              </div>
-            </li>
-            <li class='header-nav__item'>
-              <ul class='header-nav__user'>
-                <li class='header-nav__user-item'>
-                  Авторизация
-                </li>
-              </ul>
-            </li>
+    <header class='header'>
+      <div class='header__logo'>
+        <img class='logo' src='img/logo-mobile-white@1x.png' width='100' height='19' alt='Погнали?'>
+        <div class='header__menu'>
+          <button class='burger' type='button'><?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+            <g>
+              <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+              <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+            </g>
+            </svg>
+          </button>
+          <ul class='menu menu--is-active'>
+            <li class='menu__item'>О сервисе</li>
+            <li class='menu__item'>Направления</li>
+            <li class='menu__item'>Попутчики</li>
           </ul>
         </div>
-      </nav>
+      </div>
+      <b class='header__slogan'>
+        В путешествие
+        с крутыми попутчиками!
+      </b>
+      <div class='header__img'>
+        <img class='img' src='img/traveller-illustration-mobile@1x.png' width='192' height='255' alt='Иллюстрация путешественника'>
+      </div>
+      <div class='header__buttons'>
+        <button class='button button--mango' type='button'><img src='img/topmenu-phone.svg' width='18' height='18' alt='Позвоните нам'></button>
+        <button class='button button--orange' type='button'><img src='img/topmenu-mail.svg' width='18' height='18' alt='напишите нам'></button>
+        <button class='button button--yellow button--text' type='button'>авторизация</button>
+      </div>
     </header>
     <main class='page-main'>
       <section class='reviews'>
