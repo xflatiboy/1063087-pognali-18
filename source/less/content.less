@@ -32,6 +32,12 @@
     vertical-align: middle;
     color: #161c35;
   }
+
+  &--border {
+    border: 3px solid #192144;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
 }
 
 .burger {
@@ -69,12 +75,84 @@
   font-weight: bold;
   font-size: 24px;
   padding-left: 30px;
+  margin: 0;
+
+  &--center {
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .line-level {
   width: 31px;
   height: 1px;
   background-color: #ffffff;
+}
+
+.block-line {
+  width: 200px;
+  height: 1px;
+  background-color: #444444;
+  opacity: 0.5;
+}
+
+.form {
+  margin: 0 auto;
+  width: 270px;
+
+  &__email {
+    height: 62px;
+    border-radius: 15px;
+    border: 0;
+    padding-left: 24px;
+    font-size: 18px;
+  }
+
+  &__button {
+    width: 60px;
+    height: 62px;
+    border-radius: 15px;
+    background-color: #ffd74b;
+    margin-left: -20px;
+    background-image: url('../img/triangle-arrow-right.svg');
+    background-size: 10px 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts {
+
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    color: #ffd74b;
+    font-size: 16px;
+
+    &--dark-blue {
+      color: #192144;
+    }
+  }
+
+  &__img {
+    width: 18px;
+    height: 18px;
+    margin: 13px;
+  }
+
+  &__background {
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    border-radius: 40px;
+  }
+}
+
+.map {
+
 }
 
 .visually-hidden {

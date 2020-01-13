@@ -1,14 +1,31 @@
 .service-block {
-  margin-top: -20px;
   width: 320px;
   background-color: #141b3b;
   border-radius: 0 0 27px 27px;
   padding-bottom: 100px;
 
   &--white {
-    position: relative;
     background-color: #edeff6;
-    z-index: -1;
+  }
+
+  &--yellow {
+    background-color: #ffd74b;
+  }
+
+  &--first-block {
+    z-index: 10;
+  }
+
+  &--second-block {
+    z-index: 9;
+  }
+
+  &--third-block {
+    z-index: 8;
+  }
+
+  &--fourth-block {
+    z-index: 7;
   }
 
   &__content {
@@ -27,6 +44,14 @@
     font-size: 16px;
     width: 250px;
     padding-left: 30px;
+
+    &--profile-text {
+      margin: 0;
+    }
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__text--grey {
@@ -46,6 +71,11 @@
   &__item {
     position: relative;
     margin-top: 10px;
+    align-items: center;
+
+    &--center {
+      text-align: center;
+    }
 
     &-img {
       border-radius: 10px 10px 0 0;
@@ -97,6 +127,33 @@
 
     &-flag {
       margin-top: -10px;
+    }
+
+    &-block {
+      width: 100px;
+      display: flex;
+      margin: 0 auto;
+    }
+
+    &-status {
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #f97676;
+      margin-right: 5px;
+      margin-top: 22px;
+    }
+
+    &-hashtag {
+      width: 200px;
+      margin: 0 auto;
+    }
+
+    &-movement {
+      width: 120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
     }
   }
 
@@ -159,5 +216,24 @@
     color: #1d2e5b;
     font-size: 18px;
     font-weight: bold;
+    width: 100%;
   }
+
+  &__add-profile {
+    width: 270px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__price-profile {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-profile__img-absolute {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+
 }
