@@ -1,0 +1,163 @@
+.service-block {
+  margin-top: -20px;
+  width: 320px;
+  background-color: #141b3b;
+  border-radius: 0 0 27px 27px;
+  padding-bottom: 100px;
+
+  &--white {
+    position: relative;
+    background-color: #edeff6;
+    z-index: -1;
+  }
+
+  &__content {
+    width: 270px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  &__background {
+    background-image: url("../img/about-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 16px;
+    width: 250px;
+    padding-left: 30px;
+  }
+
+  &__text--grey {
+    color: #444444;
+  }
+
+  &__text--bold {
+    font-weight: bold;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    margin-top: 10px;
+
+    &-img {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &-profile {
+      position: relative;
+    }
+
+    &-photo {
+      border-radius: 10px 10px 0 0;
+    }
+
+    &-lvl {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 60px;
+      height: 60px;
+      border-radius: 33px;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      background-color: ~'rgba(0,0,0,0.5)';
+      border: solid 3px #ff8d30;
+    }
+
+    &-text:first-child {
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    &-text:last-child {
+      padding-bottom: 10px;
+    }
+
+    &-description {
+      margin-top: -4px;
+      position: relative;
+      background-color: #ffffff;
+    }
+
+    &-countries {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-flag {
+      margin-top: -10px;
+    }
+  }
+
+  &__country {
+    position: relative;
+    margin-top: -15px;
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    height: 65px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    z-index: 2;
+
+    &-flag {
+      position: absolute;
+      left: 25px;
+      top: -11px;
+      z-index: 3;
+    }
+
+    &-info {
+      height: 70px;
+    }
+
+    &-name {
+      margin: 0;
+      font-size: 21px;
+      font-weight: bold;
+      color: #161c35;
+    }
+
+    &-text {
+      margin: 0;
+      font-size: 16px;
+      color: #c7c7c7;
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &-right {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 20px;
+    }
+  }
+
+  &__to-all {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: #1d2e5b;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
