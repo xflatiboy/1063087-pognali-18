@@ -97,6 +97,7 @@
 }
 
 .form {
+  position: relative;
   margin: 0 auto;
   width: 270px;
 
@@ -106,6 +107,9 @@
     border: 0;
     padding-left: 24px;
     font-size: 18px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 82px;
   }
 
   &__button {
@@ -118,6 +122,8 @@
     background-size: 10px 14px;
     background-position: center;
     background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
   }
 }
 
