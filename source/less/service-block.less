@@ -2,7 +2,7 @@
   width: 320px;
   background-color: #141b3b;
   border-radius: 0 0 27px 27px;
-  padding-bottom: 100px;
+  margin-top: -80px;
 
   &--white {
     background-color: #edeff6;
@@ -13,18 +13,22 @@
   }
 
   &--first-block {
+    position: relative;
     z-index: 10;
   }
 
   &--second-block {
+    position: relative;
     z-index: 9;
   }
 
   &--third-block {
+    position: relative;
     z-index: 8;
   }
 
   &--fourth-block {
+    position: relative;
     z-index: 7;
   }
 
@@ -44,6 +48,7 @@
     font-size: 16px;
     width: 250px;
     padding-left: 30px;
+    margin-bottom: 0;
 
     &--profile-text {
       margin: 0;
@@ -122,19 +127,32 @@
 
     &-countries {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     &-flag {
-      margin-top: -10px;
+      margin: -10px 10px 0 10px;
     }
 
     &-block {
-      width: 100px;
       display: flex;
-      margin: 0 auto;
+      justify-content: center;
     }
 
+    &-name {
+      position: relative;
+    }
+
+    &-name::before {
+      position: absolute;
+      content: "";
+      right: 5px;
+      width: 5px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #f97676;
+    }
+/**
     &-status {
       width: 5px;
       height: 5px;
@@ -143,7 +161,7 @@
       margin-right: 5px;
       margin-top: 22px;
     }
-
+**/
     &-hashtag {
       width: 200px;
       margin: 0 auto;
@@ -225,24 +243,9 @@
     position: relative;
   }
 
-  &__price-profile {
-    display: flex;
-    justify-content: space-between;
-<<<<<<< HEAD
-=======
-  }
-
-  .add-profile__img-absolute {
-    position: absolute;
-    top: 20px;
-    right: 0;
->>>>>>> module3-task1
-  }
-
   .add-profile__img-absolute {
     position: absolute;
     top: 20px;
     right: 0;
   }
-
 }
