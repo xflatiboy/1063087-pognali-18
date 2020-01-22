@@ -15,6 +15,7 @@
   &--first-block {
     position: relative;
     z-index: 10;
+    margin-top: -20px;
   }
 
   &--second-block {
@@ -32,6 +33,16 @@
     z-index: 7;
   }
 
+  &--fifth-block {
+    position: relative;
+    z-index: 6;
+  }
+
+  &--sixth-block {
+    position: relative;
+    z-index: 5;
+  }
+
   &__content {
     width: 270px;
     margin: 0 auto;
@@ -41,10 +52,11 @@
   &__background {
     background-image: url("../img/about-mobile@1x.png");
     background-repeat: no-repeat;
+    background-position: 17px;
   }
 
   &__text {
-    color: black;
+    color: #ffffff;
     font-size: 16px;
     width: 250px;
     padding-left: 30px;
@@ -146,7 +158,8 @@
     &-name::before {
       position: absolute;
       content: "";
-      right: 5px;
+      top: 7px;
+      left: -10px;
       width: 5px;
       height: 5px;
       border-radius: 5px;
