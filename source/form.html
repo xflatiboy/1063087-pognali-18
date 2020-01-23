@@ -4,206 +4,219 @@
     <meta charset="utf-8">
     <title>Погнали? Направления</title>
   </head>
-  <body>
-    <header class='header__catalog'>
-      <nav class='header-nav'>
-        <button class='header-nav__toggle' type='button'>Открыть меню</button>
-        <div class='header-nav__wrapper'>
-          <a class='header-nav__logo' href='#'>
+  <body class='body'>
+    <div class='wrapper'>
+      <header class='header__form'>
+        <div class='header__top'>
+            <img class='logo' src='img/logo-mobile-white@1x.png' width='100' height='19' alt='Погнали?'>
+            <div class='header__menu'>
+              <button class='burger' type='button'><?xml version="1.0" encoding="utf-8"?>
+                <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 25 11" style="enable-background:new 0 0 25 11;" xml:space="preserve">
+                <g>
+                  <path d="M1.5,3h22C24.3,3,25,2.3,25,1.5S24.3,0,23.5,0h-22C0.7,0,0,0.7,0,1.5S0.7,3,1.5,3z"/>
+                  <path d="M23.5,8h-22C0.7,8,0,8.7,0,9.5S0.7,11,1.5,11h22c0.8,0,1.5-0.7,1.5-1.5S24.3,8,23.5,8z"/>
+                </g>
+                </svg>
+              </button>
+              <ul class='menu menu--is-active'>
+                <li class='menu__item'>О сервисе</li>
+                <li class='menu__item'>Направления</li>
+                <li class='menu__item'>Попутчики</li>
+              </ul>
+            </div>
+          </div>
+      </header>
+      <main class='main-form'>
+        <section class='profile-form'>
+          <h2 class='visually-hidden'>Профиль пользователя</h2>
+          <div class='profile-form__info'>
+            <div class='profile-form__level'>
+              <p class='profile-form__number'>
+                80
+              </p>
+              <div class='profile-form__line'></div>
+              <p class='profile-form__text'>
+                level
+              </p>
+            </div>
+            <img class='profile-form__img'>
+          </div>
+          <button class='profile-form__change-photo'>Сменить фото</button>
+          <div class='profile-form__block'>
+            Тэги
+            <p class='profile-form__hashtag'>#бургер #бар #футбол #концерт #крафт</p>
+          </div>
+          <div class='profile-form__block'>
+            Транспорт
+            <img class='block__img profile__is-active' src='#' alt='На самолете'>
+            <img class='block__img' src='#' alt='на автобусе'>
+            <img class='block__img' src='#' alt='На велосипеде'>
+            <img class='block__img' src='#' alt='пешком'>
+          </div>
+        </section>
+        <section class='plan'>
+          <h2 class='form__name'>Мои планы:</h2>
+          <div class='plan__stats'>
+            <b class='plan__country'>1. Франция, Италия</b>
+            <p class='plan__text'>3 попутчика</p>
+            <p class='plan__text'>26 мар — 29 мар</p>
+            <button class='plan__button'>Изменить</button>
+          </div>
+          <div class='plan__stats'>
+            <b class='plan__country'>2. Таиланд, Индонезия</b>
+            <p class='plan__text'>1 попутчик</p>
+            <p class='plan__text'>1 июл — 15 июл</p>
+            <button class='plan__button'>Изменить</button>
+          </div>
+        </section>
+        <section class='add-plan'>
+          <div class='add-plan__name'>
+            <h2 class='form__name'>Добавить план:</h2>
+            <div class='add-plan__toggle add-plan__is-active'></div>
+            <div class='add-plan__toggle'></div>
+            <div class='add-plan__toggle'></div>
+          </div>
+          <div class='add-plan__steps'>
+            <h3 class='add-plan__h3'>Шаг 1. Даты пребывания</h3>
+            <p class='add-plan__text'>Укажите предпочтительное количество попутчиков, которых
+  вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <div class='add-plan__form'>
+              <div class='form__first-point'>
+                <p class='form__first-point-name'>ищу попутчиков:</p>
+                <p class='form__first-point-size'>Чел.</p>
+              </div>
+              <div class='form__second-point'>
+                <button class='form__second-point-button'>-</button>
+                <input type='text' placeholder='2'>
+                <button class='form__second-point-button'>+</button>
+              </div>
+            </div>
+            <div class='add-plan__form'>
+              <div class='form__first-point'>
+                <p class='form__first-point-name'>Длительность:</p>
+                <p class='form__first-point-size'>дн.</p>
+              </div>
+              <div class='form__second-point'>
+                <button class='form__second-point-button'>-</button>
+                <input type='text' placeholder='2'>
+                <button class='form__second-point-button'>+</button>
+              </div>
+            </div>
+            <label>
+              <input type='checkbox' checked>Можно с детьми
+            </label>
+            <div class='add-plan__month'>
+              <button class='month-button'></button>
+              <p class='month-text'>Март 2019</p>
+              <button class='month-button'></button>
+            </div>
+            <div class='add-plan__calendar'>
+              <div class='calendar-week'>
+                <p class='calendar-day'>П</p>
+                <p class='calendar-day'>В</p>
+                <p class='calendar-day'>С</p>
+                <p class='calendar-day'>Ч</p>
+                <p class='calendar-day'>П</p>
+                <p class='calendar-day holiday'>С</p>
+                <p class='calendar-day holiday'>В</p>
+              </div>
+              <div class='calendar-numbers'>
+                <p class='calendar-day'>23</p>
+                <p class='calendar-day'>24</p>
+                <p class='calendar-day'>25</p>
+                <p class='calendar-day'>26</p>
+                <p class='calendar-day'>27</p>
+                <p class='calendar-day'>28</p>
+                <p class='calendar-day'>1</p>
+                <p class='calendar-day'>2</p>
+                <p class='calendar-day'>3</p>
+                <p class='calendar-day'>4</p>
+                <p class='calendar-day'>5</p>
+                <p class='calendar-day'>6</p>
+                <p class='calendar-day'>7</p>
+                <p class='calendar-day'>8</p>
+                <p class='calendar-day'>9</p>
+                <p class='calendar-day'>10</p>
+                <p class='calendar-day'>11</p>
+                <p class='calendar-day'>12</p>
+                <p class='calendar-day'>13</p>
+                <p class='calendar-day'>14</p>
+                <p class='calendar-day'>15</p>
+                <p class='calendar-day'>16</p>
+                <p class='calendar-day'>17</p>
+                <p class='calendar-day'>18</p>
+                <p class='calendar-day'>19</p>
+                <p class='calendar-day'>20</p>
+                <p class='calendar-day'>21</p>
+                <p class='calendar-day'>22</p>
+                <p class='calendar-day'>23</p>
+                <p class='calendar-day'>24</p>
+                <p class='calendar-day'>25</p>
+                <p class='calendar-day'>26</p>
+                <p class='calendar-day'>27</p>
+                <p class='calendar-day'>28</p>
+                <p class='calendar-day'>29</p>
+                <p class='calendar-day'>30</p>
+                <p class='calendar-day'>31</p>
+                <p class='calendar-day'>1</p>
+                <p class='calendar-day'>2</p>
+                <p class='calendar-day'>3</p>
+                <p class='calendar-day'>4</p>
+                <p class='calendar-day'>5</p>
+              </div>
+            </div>
+            <button class='steps-button'>Следующий шаг</button>
+          </div>
+          <div class='add-plan__steps'>
+            <h3 class='add-plan__h3'>Шаг 2. Маршрут</h3>
+            <p class='add-plan__text'>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+
+            <button class='steps-button'>Следующий шаг</button>
+            <button class='steps-behind'>На шаг назад</button>
+          </div>
+          <div class='add-plan__steps'>
+            <h3 class='add-plan__h3'>Шаг 3. Развлечения</h3>
+            <p class='add-plan__text'>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <div class='plan__countries'>
+              <label>
+                <p class='plan__countries-name'>Босния и герцегови</p>
+                <img class='plan__countries-img'>
+                <textarea type='text' row='9' placeholder='План действий'></textarea>
+              </label>
+            </div>
+            <div class='plan__countries'>
+              <label>
+                <p class='plan__countries-name'>Чехия</p>
+                <img class='plan__countries-img'>
+                <textarea type='text' row='9' placeholder='План действий'>Пить пиво и лазить
+                  по старым замкам, наслаждаться архитектурой
+                  и вот это все.
+                </textarea>
+              </label>
+            </div>
+            <button class='steps-button'>Отрпавить</button>
+            <button class='steps-behind'>На шаг назад</button>
+          </div>
+        </section>
+      </main>
+      <footer class='footer'>
+        <div class='footer__we'>
+          <a class='footer__we-logo'>
             <img class='logo-img' src='https://via.placeholder.com/150x150' alt='Погнали?'>
           </a>
-          <h1 class='h1-catalog'>Направления</h1>
-        </div>
-      </nav>
-    </header>
-    <main class='main-form'>
-      <section class='profile-form'>
-        <h2 class='visually-hidden'>Профиль пользователя</h2>
-        <div class='profile-form__info'>
-          <div class='profile-form__level'>
-            <p class='profile-form__number'>
-              80
-            </p>
-            <div class='profile-form__line'></div>
-            <p class='profile-form__text'>
-              level
-            </p>
+          <div class='footer__social'>
+            <a class='footer__social-link' href='#'><img class='footer__social-facebook' alt='фейсбук'></a>
+            <a class='footer__social-link' href='#'><img class='footer__social-vk' alt='вконтакте'></a>
+            <a class='footer__social-link' href='#'><img class='footer__social-instagram' alt='инстаграмм'></a>
           </div>
-          <img class='profile-form__img'>
-        </div>
-        <button class='profile-form__change-photo'>Сменить фото</button>
-        <div class='profile-form__block'>
-          Тэги
-          <p class='profile-form__hashtag'>#бургер #бар #футбол #концерт #крафт</p>
-        </div>
-        <div class='profile-form__block'>
-          Транспорт
-          <img class='block__img profile__is-active' src='#' alt='На самолете'>
-          <img class='block__img' src='#' alt='на автобусе'>
-          <img class='block__img' src='#' alt='На велосипеде'>
-          <img class='block__img' src='#' alt='пешком'>
-        </div>
-      </section>
-      <section class='plan'>
-        <h2 class='form__name'>Мои планы:</h2>
-        <div class='plan__stats'>
-          <b class='plan__country'>1. Франция, Италия</b>
-          <p class='plan__text'>3 попутчика</p>
-          <p class='plan__text'>26 мар — 29 мар</p>
-          <button class='plan__button'>Изменить</button>
-        </div>
-        <div class='plan__stats'>
-          <b class='plan__country'>2. Таиланд, Индонезия</b>
-          <p class='plan__text'>1 попутчик</p>
-          <p class='plan__text'>1 июл — 15 июл</p>
-          <button class='plan__button'>Изменить</button>
-        </div>
-      </section>
-      <section class='add-plan'>
-        <div class='add-plan__name'>
-          <h2 class='form__name'>Добавить план:</h2>
-          <div class='add-plan__toggle add-plan__is-active'></div>
-          <div class='add-plan__toggle'></div>
-          <div class='add-plan__toggle'></div>
-        </div>
-        <div class='add-plan__steps'>
-          <h3 class='add-plan__h3'>Шаг 1. Даты пребывания</h3>
-          <p class='add-plan__text'>Укажите предпочтительное количество попутчиков, которых
-вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-          <div class='add-plan__form'>
-            <div class='form__first-point'>
-              <p class='form__first-point-name'>ищу попутчиков:</p>
-              <p class='form__first-point-size'>Чел.</p>
-            </div>
-            <div class='form__second-point'>
-              <button class='form__second-point-button'>-</button>
-              <input type='text' placeholder='2'>
-              <button class='form__second-point-button'>+</button>
-            </div>
+          <div class='developed'>
+            <p class='developed__text description'>Разработано</p>
+            <a class='developed__html-academy'><img class='developed__img' src='#' alt='html-academy'></a>
           </div>
-          <div class='add-plan__form'>
-            <div class='form__first-point'>
-              <p class='form__first-point-name'>Длительность:</p>
-              <p class='form__first-point-size'>дн.</p>
-            </div>
-            <div class='form__second-point'>
-              <button class='form__second-point-button'>-</button>
-              <input type='text' placeholder='2'>
-              <button class='form__second-point-button'>+</button>
-            </div>
-          </div>
-          <label>
-            <input type='checkbox' checked>Можно с детьми
-          </label>
-          <div class='add-plan__month'>
-            <button class='month-button'></button>
-            <p class='month-text'>Март 2019</p>
-            <button class='month-button'></button>
-          </div>
-          <div class='add-plan__calendar'>
-            <div class='calendar-week'>
-              <p class='calendar-day'>П</p>
-              <p class='calendar-day'>В</p>
-              <p class='calendar-day'>С</p>
-              <p class='calendar-day'>Ч</p>
-              <p class='calendar-day'>П</p>
-              <p class='calendar-day holiday'>С</p>
-              <p class='calendar-day holiday'>В</p>
-            </div>
-            <div class='calendar-numbers'>
-              <p class='calendar-day'>23</p>
-              <p class='calendar-day'>24</p>
-              <p class='calendar-day'>25</p>
-              <p class='calendar-day'>26</p>
-              <p class='calendar-day'>27</p>
-              <p class='calendar-day'>28</p>
-              <p class='calendar-day'>1</p>
-              <p class='calendar-day'>2</p>
-              <p class='calendar-day'>3</p>
-              <p class='calendar-day'>4</p>
-              <p class='calendar-day'>5</p>
-              <p class='calendar-day'>6</p>
-              <p class='calendar-day'>7</p>
-              <p class='calendar-day'>8</p>
-              <p class='calendar-day'>9</p>
-              <p class='calendar-day'>10</p>
-              <p class='calendar-day'>11</p>
-              <p class='calendar-day'>12</p>
-              <p class='calendar-day'>13</p>
-              <p class='calendar-day'>14</p>
-              <p class='calendar-day'>15</p>
-              <p class='calendar-day'>16</p>
-              <p class='calendar-day'>17</p>
-              <p class='calendar-day'>18</p>
-              <p class='calendar-day'>19</p>
-              <p class='calendar-day'>20</p>
-              <p class='calendar-day'>21</p>
-              <p class='calendar-day'>22</p>
-              <p class='calendar-day'>23</p>
-              <p class='calendar-day'>24</p>
-              <p class='calendar-day'>25</p>
-              <p class='calendar-day'>26</p>
-              <p class='calendar-day'>27</p>
-              <p class='calendar-day'>28</p>
-              <p class='calendar-day'>29</p>
-              <p class='calendar-day'>30</p>
-              <p class='calendar-day'>31</p>
-              <p class='calendar-day'>1</p>
-              <p class='calendar-day'>2</p>
-              <p class='calendar-day'>3</p>
-              <p class='calendar-day'>4</p>
-              <p class='calendar-day'>5</p>
-            </div>
-          </div>
-          <button class='steps-button'>Следующий шаг</button>
         </div>
-        <div class='add-plan__steps'>
-          <h3 class='add-plan__h3'>Шаг 2. Маршрут</h3>
-          <p class='add-plan__text'>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
-
-          <button class='steps-button'>Следующий шаг</button>
-          <button class='steps-behind'>На шаг назад</button>
-        </div>
-        <div class='add-plan__steps'>
-          <h3 class='add-plan__h3'>Шаг 3. Развлечения</h3>
-          <p class='add-plan__text'>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-          <div class='plan__countries'>
-            <label>
-              <p class='plan__countries-name'>Босния и герцегови</p>
-              <img class='plan__countries-img'>
-              <textarea type='text' row='9' placeholder='План действий'></textarea>
-            </label>
-          </div>
-          <div class='plan__countries'>
-            <label>
-              <p class='plan__countries-name'>Чехия</p>
-              <img class='plan__countries-img'>
-              <textarea type='text' row='9' placeholder='План действий'>Пить пиво и лазить
-                по старым замкам, наслаждаться архитектурой
-                и вот это все.
-              </textarea>
-            </label>
-          </div>
-          <button class='steps-button'>Отрпавить</button>
-          <button class='steps-behind'>На шаг назад</button>
-        </div>
-      </section>
-    </main>
-    <footer class='footer'>
-      <div class='footer__we'>
-        <a class='footer__we-logo'>
-          <img class='logo-img' src='https://via.placeholder.com/150x150' alt='Погнали?'>
-        </a>
-        <div class='footer__social'>
-          <a class='footer__social-link' href='#'><img class='footer__social-facebook' alt='фейсбук'></a>
-          <a class='footer__social-link' href='#'><img class='footer__social-vk' alt='вконтакте'></a>
-          <a class='footer__social-link' href='#'><img class='footer__social-instagram' alt='инстаграмм'></a>
-        </div>
-        <div class='developed'>
-          <p class='developed__text description'>Разработано</p>
-          <a class='developed__html-academy'><img class='developed__img' src='#' alt='html-academy'></a>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
