@@ -89,7 +89,7 @@
       </header>
       <main class='page-main'>
         <section class='service-block service-block__background service-block--first-block'>
-          <div class='service-block__content'>
+          <div class='service-block__content service-block__content--first'>
             <h2 class='block-name'>О сервисе</h2>
             <p class='service-block__text'>
               Любое путешествие веселее
@@ -145,7 +145,7 @@
               </li>
             </ul>
             <div class='service-block__button button'>
-              <a class='service-block__to-all' href='form.html'>Показать все</a>
+              <a class='service-block__to-all' href='catalog.html'>Показать все</a>
               <div class='service-block__button-right'>1</div>
             </div>
           </div>
@@ -224,13 +224,11 @@
                 </div>
               </li>
             </ul>
-            <span>
-            <a class='service-block__to-all button' href='catalog.html'>Показать всех</a>
-            </span>
+            <a class='service-block__to-all button' href='form.html'>Показать всех</a>
           </div>
         </section>
         <section class='service-block service-block--white service-block--fourth-block'>
-          <div class='service-block__add-profile'>
+          <div class='service-block__content'>
             <h2 class='block-name'>Добавьте<br>свой<br>профиль</h2>
             <img class='add-profile__img-absolute' src='img/rates@1x.png' width='99' height='99'>
             <div class="price-list">
@@ -266,86 +264,90 @@
           </div>
         </section>
         <section class='service-block service-block--fifth-block'>
-          <h2 class='block-name block-name--center'>Заинтересовались?</h2>
-          <p class='service-block__text service-block__text--center'>
-            Зарегистрируйтесь,<br>
-            это быстро и бесплатно!<br>
-            Уже зарегистрированы? Тогда<br> скорее <a class='service-block__link'>авторизуйтесь</a>.
-          </p>
-          <form class='form'>
-            <input class='form__email' type='email' placeholder="E-mail">
-            <button class='form__button' type='submit'></button>
-          </form>
-          <p class='service-block__text service-block__text--center'>
-            Остались вопросы?<br>
-            Мы с радостью на них ответим!
-          </p>
-          <div class='contacts'>
-            <div class='contacts__group'>
-              <div class='contacts__background'>
-                <div class='contacts__img'>
-                  <?xml version="1.0" encoding="utf-8"?>
-                  <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0{fill:#ffd74b;}
-                  </style>
-                  <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
-                    c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
-                    c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
-                    c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
-                    M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
-                    c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
-                    c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
-                    c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
-                  </svg>
+          <div class='service-block__content'>
+            <h2 class='block-name block-name--center'>Заинтересовались?</h2>
+            <p class='service-block__text service-block__text--center'>
+              Зарегистрируйтесь,<br>
+              это быстро и бесплатно!<br>
+              Уже зарегистрированы? Тогда<br> скорее <a class='service-block__link'>авторизуйтесь</a>.
+            </p>
+            <form class='form'>
+              <input class='form__email' type='email' placeholder="E-mail">
+              <button class='form__button' type='submit'></button>
+            </form>
+            <p class='service-block__text service-block__text--center'>
+              Остались вопросы?<br>
+              Мы с радостью на них ответим!
+            </p>
+            <div class='contacts'>
+              <div class='contacts__group'>
+                <div class='contacts__background'>
+                  <div class='contacts__img'>
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{fill:#ffd74b;}
+                    </style>
+                    <path class="st0" d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
+                      c0.1,0,3.7-0.3,5.9-0.5c0.1,0,0.1,0,0.2,0c0.8,0,1.5-0.7,1.5-1.5l0-3C9,6.7,9.7,6,10.7,6h14.7C26.2,6,27,6.7,27,7.7l0,3
+                      c0,0.8,0.7,1.5,1.5,1.5c0.1,0,0.1,0,0.2,0c2.2,0.2,5.8,0.5,5.9,0.5c0.8,0,1.5-0.7,1.5-1.5c0-0.1,0-0.3,0-0.3
+                      c-0.2-2.1-0.9-5.5-2.8-7.4C30.8,1.1,24.4,0,18,0z M18,19.5c-1.7,0-3,1.3-3,3s1.3,3,3,3c1.7,0,3-1.3,3-3S19.7,19.5,18,19.5z
+                      M15.7,12.7v-1.9c0-1-0.8-1.9-1.9-1.9S12,9.8,12,10.9v1.9L1.9,23.6c-0.7,0.7-1.1,1.6-1.1,2.7v3c0,1.7,1.3,3,3,3h0.8v1.9
+                      c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9v-1.9h19.5v1.9c0,1,0.8,1.9,1.9,1.9c1,0,1.9-0.8,1.9-1.9v-1.9h0.8c1.7,0,3-1.3,3-3v-3
+                      c0-1.1-0.4-2-1.1-2.7L24,12.7v-1.9c0-1-0.8-1.9-1.9-1.9s-1.9,0.8-1.9,1.9v1.9H15.7z M18,16.5c3.3,0,6,2.7,6,6c0,3.3-2.7,6-6,6
+                      c-3.3,0-6-2.7-6-6C12,19.2,14.7,16.5,18,16.5z"/>
+                    </svg>
+                  </div>
                 </div>
+                <a class='contacts__text' href='tel:8 800 555-86-28'>8 800 555-86-28</a>
               </div>
-              <a class='contacts__text' href='tel:8 800 555-86-28'>8 800 555-86-28</a>
-            </div>
-            <div class='contacts__group'>
-              <div class='contacts__background'>
-                <div class='contacts__img'>
-                  <?xml version="1.0" encoding="utf-8"?>
-                  <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
-                  <style type="text/css">
-                    .st0{fill:#ffd74b;}
-                  </style>
-                  <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
-                    c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
-                    L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
-                    c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
-                  </svg>
+              <div class='contacts__group'>
+                <div class='contacts__background'>
+                  <div class='contacts__img'>
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 36 26" style="enable-background:new 0 0 36 26;" xml:space="preserve">
+                    <style type="text/css">
+                      .st0{fill:#ffd74b;}
+                    </style>
+                    <path class="st0" d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
+                      c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2
+                      L25,13l6.9,6.8c0.6,0.6,0.6,1.5,0,2c-0.6,0.6-1.5,0.6-2.1,0l-6.9-6.8c0,0-2.1,2.2-2.5,2.5c-0.6,0.6-1.4,1-2.4,1
+                      c-0.9,0-1.8-0.4-2.4-1c-0.4-0.4-2.5-2.5-2.5-2.5l-6.9,6.8c-0.6,0.6-1.5,0.6-2.1,0c-0.6-0.6-0.6-1.5,0-2L11,13z"/>
+                    </svg>
+                  </div>
                 </div>
+                <a class='contacts__text' href='#'>mail@htmlacademy.ru</a>
               </div>
-              <a class='contacts__text' href='#'>mail@htmlacademy.ru</a>
             </div>
           </div>
         </section>
         <section class='service-block service-block--sixth-block service-block--yellow'>
-          <div class='contacts__group'>
-            <div class='contacts__background'>
-              <div class='contacts__img'>
-                <?xml version="1.0" encoding="utf-8"?>
-                <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
-                <style type="text/css">
-                  .st0{fill:#ffd74b;}
-                </style>
-                <path class="st0" d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
-                  c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
-                  c0,1.2,1,2.2,2.3,2.2s2.3-1,2.3-2.2v-0.4C17.2,29.8,28,22.8,28,13.6C28,6.1,21.7,0,14,0C6.3,0,0,6.1,0,13.6z M14,4.5
-                  c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14,4.5z"/>
-                </svg>
+          <div class='service-block__content'>
+            <div class='contacts__group'>
+              <div class='contacts__background'>
+                <div class='contacts__img'>
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 28 43" style="enable-background:new 0 0 28 43;" xml:space="preserve">
+                  <style type="text/css">
+                    .st0{fill:#ffd74b;}
+                  </style>
+                  <path class="st0" d="M11.7,13.9c0-1.2,1-2.2,2.3-2.2s2.3,1,2.3,2.2c0,1.2-1,2.2-2.3,2.2C12.8,16.1,11.7,15.1,11.7,13.9z M14,8.1
+                    c-3.2,0-5.9,2.6-5.9,5.8s2.6,5.8,5.9,5.8c3.2,0,5.9-2.6,5.9-5.8C19.9,10.7,17.2,8.1,14,8.1z M0,13.6c0,9.1,10.9,16.2,11.7,26.7v0.4
+                    c0,1.2,1,2.2,2.3,2.2s2.3-1,2.3-2.2v-0.4C17.2,29.8,28,22.8,28,13.6C28,6.1,21.7,0,14,0C6.3,0,0,6.1,0,13.6z M14,4.5
+                    c5.2,0,9.5,4.2,9.5,9.4c0,5.2-4.2,9.4-9.5,9.4s-9.5-4.2-9.5-9.4C4.5,8.7,8.8,4.5,14,4.5z"/>
+                  </svg>
+                </div>
               </div>
+              <address class='contacts__text contacts__text--dark-blue'>ул. Большая Конюшенная, 19/8</address>
             </div>
-            <address class='contacts__text contacts__text--dark-blue'>ул. Большая Конюшенная, 19/8</address>
+            <button class='button button--border' href='#'>Проложить маршрут</button>
           </div>
-          <button class='button button--border' href='#'>Проложить маршрут</button>
         </section>
         <section class='map'>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.746129185528!2d30.318908315957312!3d59.9363546692451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f89dee259%3A0x35cdba9c7f3d2206!2z0J3QtdCy0YHQutC40Lkg0L_RgC4sIDIwLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1578877764816!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
