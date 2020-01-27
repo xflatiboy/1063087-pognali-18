@@ -179,6 +179,51 @@
     }
 }
 
+.calendar {
+  display: flex;
+  flex-direction: column;
+
+  &__week {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+
+  &__day {
+    width: 30px;
+    color: #444444;
+
+    &--holiday {
+      color: #ff5c23;
+    }
+  }
+
+  &__number {
+    border: 1px solid #b3b3b3;
+    width: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color: #edeff6;
+    color: #444444;
+    border-collapse: collapse;
+
+    &--disabled {
+      background-color: #ffffff;
+      color: ~"rgba(68, 68, 68, 0.3)";
+    }
+
+    &--active {
+      background-color: #1d2e5b;
+      color: #ffffff;
+    }
+
+    &--curret {
+      border: 2px solid #ff5c23;
+    }
+  }
+}
+
 .month-button {
   position: absolute;
   border: none;
