@@ -169,4 +169,27 @@
       }
     }
   }
+  &__month {
+      width: 100%;
+      border-bottom: 1px solid #b3b3b3;
+      border-top: 1px solid #b3b3b3;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+}
+
+.month-button {
+  position: absolute;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+
+  &--right {
+    right: 5px;
+  }
+  &--left {
+    left: 5px;
+  }
 }
