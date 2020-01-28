@@ -1,0 +1,182 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    color: #192144;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+
+    &--no-active {
+      color: ~"rgba(25, 33, 68, 0.3)";
+    }
+  }
+
+  &__button {
+    border: none;
+    background-color: #e2e5f2;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  &--on {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--off {
+    display: none;
+  }
+
+  &__continent {
+    list-style: none;
+    cursor: pointer;
+  }
+
+  &__keyboard {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-text {
+      width: 18px;
+      text-align: center;
+      font-size: 14px;
+      margin: 0;
+      color: #1d2e5b;
+      border: 1px solid #cbced9;
+      background-color: #ffffff;
+      padding: 10px;
+
+      &--curret {
+        width: 20px;
+        background-color: #1d2e5b;
+        color: #ffffff;
+        border: none;
+      }
+    }
+  }
+
+  &__country {
+    list-style: none;
+    cursor: pointer;
+
+    &-item {
+      color: #444444;
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__button-img {
+    padding-top: 4px;
+    padding-right: 8px;
+  }
+}
+
+.catalog__criterion {
+  background-color: #edeff6;
+}
+
+.criterion {
+  &__content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+
+    &--yellow {
+      background-color: #ffd74b;
+    }
+  }
+
+  &__text {
+    color: #1d2e5b;
+    font-size: 16px;
+    font-weight: bold;
+
+    &--size {
+      font-size: 22.5px;
+    }
+
+    &--name {
+      font-size: 20px;
+    }
+
+    &--country {
+      margin: 0;
+      font-weight: 500;
+      font-size: 12px;
+      padding-left: 10px;
+    }
+  }
+
+  &__wrapper {
+    border-top: 1px solid #f3c72b;
+
+    &--no-border {
+      border: none;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__button {
+    border: none;
+    background-color: #ffd74b;
+    cursor: pointer;
+  }
+
+  &__user {
+    display: flex;
+    position: relative;
+  }
+
+  &__user::before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: 10px;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #f97676;
+  }
+
+  &__user img {
+    position: relative;
+    border-radius: 100%;
+  }
+
+  &__user::after {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    background-image: url("../img/heart-active.svg");
+    background-color: #f9eaea;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 11px;
+    bottom: -10px;
+    left: 50px;
+  }
+
+  &__country {
+    border-top: 1px solid #edeff6;
+
+    &-item {
+      display: flex;
+      margin-top: 10px;
+    }
+  }
+}

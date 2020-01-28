@@ -14,6 +14,7 @@
   text-transform: uppercase;
   width: 100%;
   font-weight: bold;
+  cursor: pointer;
 
   &--mango {
     background-color: #ff8d30;
@@ -52,6 +53,12 @@
 
   &--no-background {
     background-color: #ffffff;
+  }
+
+  &--catalog {
+    background-color: #d6daed;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -97,19 +104,13 @@
     text-align: center;
   }
 }
-
-.line-level {
-  width: 31px;
-  height: 1px;
-  background-color: #ffffff;
-}
-
-.line-level-form {
+/**
+.level-line--form {
   width: 49px;
   height: 2px;
   background-color: #cbced9;
 }
-
+**/
 .form {
   position: relative;
   margin: 0 auto;
@@ -211,6 +212,68 @@
   border: none;
   cursor: pointer;
   opacity: 0.3;
+}
+
+.content-wrapper {
+  width: 270px;
+  margin: 0 auto;
+  margin-top: -10px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.level {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  background-color: ~"rgba(0,0,0,0.5)";
+  border: solid 3px #ff8d30;
+
+  &--form {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 94px;
+    height: 94px;
+
+  }
+
+  &-text:first-child {
+    margin: 0;
+    padding-top: 10px;
+  }
+
+  &-text--form:first-child {
+    font-size: 38px;
+  }
+
+  &-text:last-child {
+    padding-bottom: 10px;
+  }
+
+  &-text--form:last-child {
+    font-size: 18px;
+  }
+
+  &-line {
+    width: 31px;
+    height: 1px;
+    background-color: #ffffff;
+
+    &--form {
+      width: 49px;
+      height: 2px;
+      background-color: #cbced9;
+    }
+  }
 }
 
 .visually-hidden {
