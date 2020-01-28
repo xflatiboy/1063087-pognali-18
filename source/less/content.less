@@ -12,6 +12,8 @@
   color: #161c35;
   font-size: 17px;
   text-transform: uppercase;
+  width: 100%;
+  font-weight: bold;
 
   &--mango {
     background-color: #ff8d30;
@@ -46,6 +48,10 @@
     background-color: #dfe3f0;
     width: 100%;
     font-size: 17px;
+  }
+
+  &--no-background {
+    background-color: #ffffff;
   }
 }
 
@@ -171,6 +177,40 @@
 
 .map {
   margin-top: -80px;
+}
+
+.small-cross {
+  width: 21px;
+  height: 21px;
+  background-color: #edeff6;
+  border-radius: 100%;
+  background-image: url("../img/small-cross.svg");
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  width: 12px;
+  height: 7px;
+  opacity: 0.3;
+  background-image: url("../img/dropdown-form.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.plusform {
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/qty-plus-mobile.svg");
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
 }
 
 .visually-hidden {

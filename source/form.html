@@ -180,45 +180,60 @@
                   <div class='calendar__number'>4</div>
                   <div class='calendar__number'>5</div>
                 </div>
-              <button class='button'>Следующий шаг</button>
-            </div>
+              </div>
+            <button class='button'>Следующий шаг</button>
           </div>
           <div class='form-block__content'>
             <h3 class='form-block__content-name form-block__content-name--size'>Шаг 2. Маршрут</h3>
             <p class='add-plan__text'>Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
             <div class='country'>
-              <div class='country-name'>Босния и герцегов</div>
-              <div class='country-flag'><img src='' width='35' height='24' alt='флаг выбранной страны'></div>
+              <div class='country-circle'></div>
+              <div class='country-close'>
+                <button class='small-cross'></button>
+              </div>
+              <div class='country-point country-point--width'><div class='country-dropdown'><button class='dropdown'></button></div>Босния и герцегов</div>
+              <div class='country-point'><img src='img/flag-bosnia.svg' width='35' height='24' alt='флаг выбранной страны'></div>
             </div>
             <div class='country'>
-              <div class='country-name'>Чехия</div>
-              <div class='country-flag'><img src='' width='35' height='24' alt='флаг выбранной страны'></div>
+              <div class='country-circle'></div>
+              <div class='country-close'>
+                <button class='small-cross'></button>
+              </div>
+              <div class='country-point country-point--width'><div class='country-dropdown'><button class='dropdown'></button></div>Чехия</div>
+              <div class='country-point'><img src='img/flag-czech.svg' width='35' height='24' alt='флаг выбранной страны'></div>
             </div>
-            <div class='country-name'>Выберите страну</div>
-            <div class='country-name'>Добавить страну</div>
-            <button class='steps-button'>Следующий шаг</button>
-            <button class='steps-behind'>На шаг назад</button>
+            <div class='country-point country-point--width'><div class='country-dropdown'><button class='dropdown'></button></div><div class='country-circle country-circle--white'></div>Выберите страну
+            <div class='country-close'>
+                <button class='small-cross'></button>
+              </div></div>
+            <div class='country-point country-point--width country-point--grey'><div class='country-dropdown'><button class='plusform'></button></div><div class='country-circle country-circle--white'></div>Добавить страну
+            <div class='country-close'>
+                <button class='small-cross'></button>
+              </div></div>
+            <button class='button'>Следующий шаг</button>
+            <button class='button button--no-background'>На шаг назад</button>
           </div>
-          <div class='add-plan__steps'>
-            <h3 class='form-block__content'>Шаг 3. Развлечения</h3>
+          <div class='form-block__content'>
+            <h3 class='form-block__content-name form-block__content-name--size'>Шаг 3. Развлечения</h3>
             <p class='add-plan__text'>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-            <div class='plan__countries'>
               <label>
-                <p class='plan__countries-name'>Босния и герцегови</p>
-                <img class='plan__countries-img'>
-                <textarea type='text' row='9' placeholder='План действий'></textarea>
+                <div class='country'>
+                  <div class='country__element'></div>
+                  <div class='country-point country-point--width country-point--no-border'>Босния и герцегов</div>
+                  <div class='country-point country-point--no-border'><img src='img/flag-bosnia.svg' width='35' height='24' alt='флаг выбранной страны'></div>
+                </div>
+                <textarea class='country__textarea' type='text' rows='10' placeholder='План действий'></textarea>
               </label>
-            </div>
-            <div class='plan__countries'>
+
               <label>
-                <p class='plan__countries-name'>Чехия</p>
-                <img class='plan__countries-img'>
-                <textarea type='text' row='9' placeholder='План действий'>Пить пиво и лазить
-                  по старым замкам, наслаждаться архитектурой
-                  и вот это все.
+                <div class='country'>
+                <div class='country-point country-point--width country-point--no-border'>Чехия</div>
+                <div class='country-point country-point--no-border'><img src='img/flag-czech.svg' width='35' height='24' alt='флаг выбранной страны'></div>
+                </div>
+                <textarea class='country__textarea' type='text' rows='10' placeholder='План действий'>Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
                 </textarea>
               </label>
-            </div>
+
             <button class='steps-button'>Отрпавить</button>
             <button class='steps-behind'>На шаг назад</button>
           </div>
@@ -226,19 +241,18 @@
         </section>
       </main>
       <footer class='footer'>
-        <div class='footer__we'>
-          <a class='footer__we-logo'>
-            <img class='logo-img' src='https://via.placeholder.com/150x150' alt='Погнали?'>
-          </a>
-          <div class='footer__social'>
-            <a class='footer__social-link' href='#'><img class='footer__social-facebook' alt='фейсбук'></a>
-            <a class='footer__social-link' href='#'><img class='footer__social-vk' alt='вконтакте'></a>
-            <a class='footer__social-link' href='#'><img class='footer__social-instagram' alt='инстаграмм'></a>
-          </div>
-          <div class='developed'>
-            <p class='developed__text description'>Разработано</p>
-            <a class='developed__html-academy'><img class='developed__img' src='#' alt='html-academy'></a>
-          </div>
+        <a class='footer__we-logo'>
+          <img class='logo-img' src='img/logo-mobile-blue@1x.png' width='96' height='15' alt='Погнали?'>
+        </a>
+        <div class='footer__social'>
+          <div class='footer__social-link' href='#'>
+            <a><img class='footer__social-link--facebook' src='img/facebook.svg' width='11' height='22' alt='фейсбук'></a></div>
+          <div class='footer__social-link' href='#'><a><img class='footer__social-link--vk' src='img/vk.svg' width='23' height='12' alt='вконтакте'></a></div>
+          <div class='footer__social-link' href='#'><a><img class='footer__social-link--instagram' src='img/instagram.svg' width='18' height='18' alt='инстаграмм'></a></div>
+        </div>
+        <div class='footer__developed'>
+          <p class='footer__text'>Разработано</p>
+          <a class='footer__html-academy'><img class='footer__img' src='img/htmlacademy.svg' width='27' height='34' alt='html-academy'></a>
         </div>
       </footer>
     </div>

@@ -1,3 +1,104 @@
 .country {
+  position: relative;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  &-point {
+    position: relative;
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #1d2e5b;
+    box-sizing: border-box;
+
+    &--width {
+      width: 100%;
+    }
+
+    &--grey {
+      background-color: #edeff6;
+    }
+
+    &--no-border {
+      border: none;
+      text-transform: none;
+      font-size: 18px;
+      padding-left: 15px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  &__element {
+    position: absolute;
+    border-left: 2px solid #1d2e5b;
+    border-top: 2px solid #1d2e5b;
+    border-bottom: 2px solid #1d2e5b;
+    height: 243px;
+    width: 12px;
+    top: 16px;
+    left: -10px;
+  }
+
+  &__element::before {
+    content: '';
+    position: absolute;
+    width: 6px ;
+    height: 6px;
+    background: #1d2e5b;
+    bottom: -4px;
+    right: 0;
+    border-radius: 100%
+  }
+
+  &__element::after {
+    content: '';
+    position: absolute;
+    width: 6px ;
+    height: 6px;
+    background: #1d2e5b;
+    top: -4px;
+    right: 0;
+    border-radius: 100%
+  }
+
+  &-close {
+    position: absolute;
+    top: -10px;
+    right: -9px;
+  }
+
+  &-dropdown {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #1d2e5b;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 44px;
+    z-index: 10;
+
+    &--white {
+      background-color: #ffffff;
+      border: 1px solid #cbced9;
+    }
+  }
 }
